@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui"
   },
   "repository": {
     "type": "git",
@@ -17,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/bunnySrinu/LearnJSTSPlaywrite4x/issues"
   },
-  "homepage": "https://github.com/bunnySrinu/LearnJSTSPlaywrite4x#readme"
+  "homepage": "https://github.com/bunnySrinu/LearnJSTSPlaywrite4x#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.65.0"
+  }
 }
